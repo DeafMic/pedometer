@@ -1,0 +1,5 @@
+<launch>
+<node ns="imu1" pkg="imu_pedometer" type="imu_pedometer" name="imu1" > </node>
+<node ns="imu2" pkg="imu_pedometer" type="imu_pedometer" name="imu2" > </node>
+	
+</launch>

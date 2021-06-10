@@ -1,0 +1,7 @@
+<launch>
+<node ns="imu1" pkg="imu_pedometer" type="imu_pedometer" name="imu1" > </node>
+<node ns="imu2" pkg="imu_pedometer" type="imu_pedometer" name="imu2" > </node>
+<node pkg="hokuyo_node" type="hokuyo_node" name="hokuyo" > </node>
+<node pkg="laser_delayed" type="laser_delayed" name="laser_delayed" > </node>
+	
+</launch>

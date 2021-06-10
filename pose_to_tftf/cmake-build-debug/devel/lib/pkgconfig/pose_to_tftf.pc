@@ -1,0 +1,8 @@
+prefix=/home/laboratorium/catkin_ws/src/pose_to_tftf/cmake-build-debug/devel
+
+Name: pose_to_tftf
+Description: Description of pose_to_tftf
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/laboratorium/catkin_ws/src/pose_to_tftf/cmake-build-debug/devel/lib 
+Requires: 

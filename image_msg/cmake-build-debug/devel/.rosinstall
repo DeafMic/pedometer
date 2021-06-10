@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/haorui/catkin_ws/src/image_msg/cmake-build-debug/devel/setup.sh
