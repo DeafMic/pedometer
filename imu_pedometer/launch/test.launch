@@ -1,8 +1,15 @@
 <launch>
 <node ns="imu1" pkg="imu_pedometer" type="imu_pedometer" name="imu1" > </node>
+
 <node ns="imu2" pkg="imu_pedometer" type="imu_pedometer" name="imu2" > </node>
+
 <node pkg="hokuyo_node" type="hokuyo_node" name="hokuyo" > </node>
+
 <node pkg="laser_delayed" type="laser_delayed" name="laser_delayed" > </node>
+
+<node name="recongnizer" pkg="recognition" type="pico_class.py" output="screen">
+	</node>
+       
 <node pkg="rosbag" type="record" name="rosbagging"
        args="record body_pose head_pose imubody imuhead scan odomscan">  </node>
 	

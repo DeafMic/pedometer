@@ -136,8 +136,9 @@ add_executable(imu_pedometer src/imu_pedometer.cpp src/IMU_Utils.cpp src/Mat_Uti
 ## Specify libraries to link a library or executable target against
 target_link_libraries(imu_pedometer
   ${catkin_LIBRARIES}
-  /opt/ros/indigo/lib/libDspFilters.so
+  /opt/ros/noetic/lib/libDspFilters.so
   phidget21
+  armadillo
 )
 
 #############

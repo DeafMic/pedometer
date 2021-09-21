@@ -489,7 +489,7 @@ int IMU_Utils::findPeaks(vec &signal, /*mat difference, mat threshold, mat type,
 	}
 	else // This is a monotone function where an endpoint is the only peak
 	{
-		unsigned int xInd;
+		long long unsigned int xInd;
 		double dpeakMags= xs.max(xInd);
 
 		if (dpeakMags > minMag + difference)
@@ -560,7 +560,7 @@ double IMU_Utils::calculateCompassBearing(double a0, double a1, double a2,
 	cout<<bearing<<endl;
 	return bearing;
 
-	//code to translate in degrees between 0 - 360°
+	//code to translate in degrees between 0 - 360ï¿½
 
 	//bearing = (yawAngle * (180.0 / pi));
 	//if (bearing < 0)
